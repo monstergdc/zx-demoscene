@@ -1,0 +1,4 @@
+Nazwa pracy: Clockwork Circlres
+Autor: MoNsTeR/GDC
+Kategoria: ZX Spectrum / Intro 256B
+Wymagania: ZX Spectrum 128
