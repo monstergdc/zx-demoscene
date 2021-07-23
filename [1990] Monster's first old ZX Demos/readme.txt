@@ -43,6 +43,6 @@ I hereby grant permission to copy/use/distribute them, provided that this readme
 However I'm not really sure about status of some of their internal content (some gfx/msx).
 
 
-monster@noniewicz.com
+monster / noniewicz.com
 http://noniewicz.com
 http://noniewicz.art.pl
