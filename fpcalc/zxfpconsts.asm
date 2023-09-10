@@ -1,18 +1,22 @@
 
 ; ZX Spectrum Floating point consts and (some) ROM routines
-
-;upd: 20230905
-
 ; based on
 ; https://zxpress.ru/article.php?id=6609&lng=eng
 ; ready to use in Pasmo
 
+;upd: 20230905, 08, 09
+
+
 STK_DIGIT	EQU	$2D22	;Accumulator value = digit in ASCII -> stack
 STACK_A		EQU	$2D28	;A -> stack
 STACK_BC	EQU	$2D2B	;BC -> stack
+STK_TO_A	EQU	$2314	;
 FP_TO_BC	EQU	$2DA2	;stack -> BC
-STK_STORE	EQU	$2AB1	;A, E, D, C, B -> stack in 5-byte internal format, just send string parameters (in this case A = 0);
-STK_FETCH	EQU	$2BF1	;
+;STK_STORE	EQU	$2AB1	;?
+STK_STORE	EQU	$2AB6	;A, E, D, C, B -> stack in 5-byte internal format, just send string parameters (in this case A = 0);
+STK_FETCH	EQU	$2BF1	;collects the 'last value' from the calculator stack. 
+				;The five bytes can be either a floating-point number, in 'short' or 'long' form, or a set of parameters that define a string.
+				;A=First byte, B=Fifth byte, C=Fourth byte, D=Third byte, E=Second byte
 PRINT_FP	EQU	$2DE3	;
 
 FP_jump_true	EQU	$00	;	jump true
